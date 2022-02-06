@@ -4,40 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <title>CampusConnect</title>
   </head>
   <body>
-    <nav class="nav">
-        <div class="logo">
-            <h4>CampusConnect</h4>
-        </div>
-      <ul id="primary-navigation" class="nav-links flex">
-        <li class="home_links"><a href="#"class="nav__link">Home</a></li>
-        <li class="home_links"><a href="#" class="nav__link">Hoodies</a></li>
-        <li class="home_links"><a href="#" class="nav__link">Tshirts</a></li>
-        <li class="home_links"><a href="#"  class="nav__link">Blogs</a></li>
-        <li class="home_links"><a href="#" class="nav__link">About Us</a></li>
-        
-          <li class="login__btn social"><a href="#"class="nav__link">Login</a></li>
-          <li class="cart__btn social"><a href="#"class="nav__link">Cart</a></li>
-        
-      </ul>
-      <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-      </div> 
-    </nav>
-    <section class="banner">
-     
-      <div class="home">
-        <div class="hero"><span class="starting">C</span><span class="remain">ampus Connect</span></div>
+    <header>
+            <div class="logo">
+        <h4>CampusConnect</h4>
       </div>
-   
-  </section>
+    <nav class="nav">
 
-     
+      <ul id="primary-navigation" class="nav-links flex">
+        <li class="home_links"><a href="#" class="nav__link">Home</a></li>
+        <li class="home_links"><a href="#merchandise" class="nav__link">Merchandise</a></li>
+        <!-- <li class="home_links"><a href="#" class="nav__link">Tshirts</a></li> -->
+        <li class="home_links"><a href="#" class="nav__link">Blogs</a></li>
+        <li class="home_links"><a href="#" class="nav__link">About Us</a></li>
+        <li class="home_links user-btn"><a href="#" class="nav__link"><svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z"></path>
+							<path fill="none" d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z"></path>
+						</svg></a></li>
+        <li class="home_links user-btn"><a href="#" class="nav__link"><svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+							<path fill="none" d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+							<path fill="none" d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+						</svg></a></li>
+      </ul>
+
+
+    </nav>
+    <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="#"><svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z"></path>
+							<path fill="none" d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z"></path>
+						</svg></a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="#"
+              ><svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+							<path fill="none" d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+							<path fill="none" d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+						</svg></a
+            >
+          </li>
+        </ul>
+              <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <div class="home">
+        <div class="hero">
+          <span class="starting">C</span
+          ><span class="remain">ampus Connect</span>
+        </div>
+      </div>
+    </section>
         <div class="intro">
       <div class="intro-text">
         <h1 class="hide">
@@ -53,13 +84,208 @@
     </div>
     <div class="slider"></div>
 
+    <section class="goals">
+      <div class="home-about">
+        <h2>Our Goals</h2>
+        <div class="columns">
+          <div class="col fade-in box">
+            <h3>Enhancing campus life</h3>
+            <p>
+              To not let the online mode of education make you miss out the fun
+              of the college life.
+            </p>
+          </div>
+          <div class="col fade-in box">
+            <h3>Networking</h3>
+            <p>
+              Connect with different bright minds and help them learn and grow.
+              and you surely can contribute to our cause too :)
+            </p>
+          </div>
+          <div class="col fade-in box">
+            <h3>Start something new and amazing</h3>
+            <p>
+              Isn't it awesome to start something of your own? Just like we did.
+            </p>
+          </div>
+        </div>
+
+</div>
+        <div class="custom-shape-divider-top-1644000556">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+      </div>
+    </section>
+    <!-- <section>
+           <div class="home-more-stuff">
+        <div class="more-stuff-grid">
+          <img
+            src="https://unsplash.it/400"
+            alt=""
+            class="slide-in from-left"
+          />
+          <p class="slide-in from-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <img
+            src="https://unsplash.it/401"
+            alt=""
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img src="//unsplash.it/400" alt="" class="slide-in from-left" />
+          <p class="slide-in from-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <img
+            src="https://unsplash.it/401"
+            alt=""
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img src="//unsplash.it/400" alt="" class="slide-in from-left" />
+          <p class="slide-in from-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <img
+            src="https://unsplash.it/401"
+            alt=""
+            class="slide-in from-right"
+          />
+        </div>
+      </div>
+    </section> -->
+
+<section class="merch-section merchandise" id="merchandise">
+  <div class="section-center fade-in">
+    <article class="header">
+      <h2>Customise your own merchandise</h2>
+      <p>Well who doesn't want to flaunt their branch hoodies and tshirts. Customise your branch hoodies and integrate them on our platform.</p>
+    </article>
+    <div class="services-center fade-in">
+      <div class="services">
+         <span class="icon">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450.78 450.78" style="enable-background:new 0 0 450.78 450.78;" xml:space="preserve">
+<path d="M449.962,173.343L373.338,56.434c-0.521-0.796-1.26-1.427-2.128-1.817c0,0-108.317-49.534-113.373-47.804l-0.604,0.205
+	c-20.534,6.962-43.152,6.962-63.698-0.004l-0.593-0.201c-5.054-1.73-113.374,47.804-113.374,47.804
+	c-0.868,0.391-1.606,1.021-2.128,1.817L0.818,173.343c-1.286,1.962-1.035,4.553,0.602,6.231c1.3,1.334,32.496,32.807,89.373,45.624
+	c2.037,0.453,4.146-0.397,5.287-2.146l14.618-22.415l1.472,226.004c0.015,2.312,1.612,4.312,3.863,4.837
+	c35.771,8.355,72.564,12.533,109.357,12.533c36.793,0,73.586-4.178,109.357-12.533c2.25-0.525,3.848-2.525,3.863-4.837
+	l1.472-226.004l14.618,22.415c1.141,1.748,3.251,2.605,5.287,2.146c56.877-12.817,88.073-44.29,89.373-45.624
+	C450.997,177.896,451.247,175.305,449.962,173.343z M372.299,73.091l57.714,88.058c-14.914,10.884-41.974,28.08-77.646,40.02
+	l-11.193-17.162C358.297,156.778,368.417,99.246,372.299,73.091z M174.936,24.448c4.307,13.438,16.556,29.459,50.454,29.459
+	c33.897,0,46.147-16.021,50.454-29.459c0.174-0.542,0.307-1.09,0.414-1.639l5.578,2.513c-0.086,0.318-0.176,0.636-0.278,0.951
+	c-9.386,29.258-39.216,33.627-56.163,33.627c-16.951,0-46.788-4.368-56.174-33.63c-0.101-0.314-0.191-0.63-0.277-0.947l5.578-2.513
+	C174.629,23.357,174.762,23.905,174.936,24.448z M185.488,17.226c0.419-0.411,1.404-1.193,2.826-1.193
+	c0.426,0,0.891,0.07,1.392,0.241l0.63,0.215c22.605,7.663,47.503,7.663,70.098,0.004l0.642-0.219
+	c2.171-0.741,3.672,0.417,4.217,0.952c0.541,0.53,1.725,1.999,1.029,4.169c-4.787,14.938-18.559,22.512-40.931,22.512
+	c-22.373,0-36.145-7.574-40.932-22.512C183.763,19.225,184.947,17.756,185.488,17.226z M109.606,184.006l-11.193,17.162
+	c-35.672-11.94-62.732-29.136-77.646-40.02l57.714-88.058C82.363,99.246,92.483,156.778,109.606,184.006z M89.62,214.652
+	c-42.411-10.338-69.562-31.8-78.124-39.356l3.781-5.77c17.296,12.609,43.516,28.592,77.499,40.286L89.62,214.652z M328.636,422.619
+	c-67.635,15.191-138.855,15.191-206.492,0l-1.554-238.667c-0.002-0.315-0.086-0.698-0.201-1.08
+	c-0.285-0.938-0.748-1.804-1.299-2.616c-19.039-28.074-29.739-100.95-32.032-118.045l72.689-32.746
+	c4.906,15.168,19.949,40.434,65.649,40.434c45.692,0,60.733-25.268,65.638-40.434l72.689,32.746
+	c-2.294,17.095-12.994,89.971-32.032,118.045c-0.55,0.811-1.014,1.677-1.299,2.616c-0.116,0.382-0.199,0.765-0.201,1.08
+	L328.636,422.619z M361.16,214.652l-3.157-4.84c33.984-11.693,60.204-27.676,77.5-40.286l3.781,5.769
+	C430.717,182.855,403.568,204.315,361.16,214.652z"/>
+</svg>
+      </span>
+      <h4><a href="#">Tshirts</a></h4>
+      <p>Get your custom college tshirts!!</p>
+      </div>
+           <div class="services">
+         <span class="icon">
+ <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 513.067 513.067" style="enable-background:new 0 0 513.067 513.067;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M425.493,141.653c-1.387-1.28-2.987-2.24-4.907-2.667l-76.053-18.88c3.413-19.307,7.253-60.48-14.933-89.6
+			C314.133,10.24,289.6,0,256.533,0s-57.6,10.24-73.067,30.507c-22.187,29.12-18.347,70.293-14.933,89.6l-76.053,18.88
+			c-1.813,0.427-3.52,1.387-4.907,2.667C-36.16,261.973,7.253,493.547,9.173,503.36c0.96,5.013,10.453,9.707,10.453,9.707H95.04
+			c0,0,10.667-5.867,10.667-11.733c0-1.387-0.213-2.667-0.747-3.947c-31.147-78.293-7.147-160.427,12.907-207.253v200.533
+			c0,5.867,4.8,10.667,10.667,10.667h256c5.867,0,10.667-10.667,10.667-10.667V290.133c0,0,44.053,128.96,12.907,207.253
+			c-2.133,5.44,0.533,11.627,5.973,13.867c1.28,0.533,2.56,0.747,3.947,0.747h75.413c5.12,0,9.493-3.627,10.453-8.64
+			C505.813,493.547,549.227,261.973,425.493,141.653z M200.533,43.413c11.2-14.613,29.973-22.08,56-22.08
+			c25.92,0,44.8,7.467,56,22.08c7.68,10.027,11.2,22.4,12.48,34.453c-12.053-13.12-32.747-24.533-68.48-24.533
+			c-35.733,0-56.427,11.413-68.48,24.533C189.333,65.813,192.853,53.44,200.533,43.413z M320.107,112.853l-63.573,54.4
+			l-63.573-54.507c2.027-10.987,12.053-38.08,63.573-38.08S318.08,101.547,320.107,112.853z M484.373,490.667h-51.2
+			c39.787-123.733-36.267-245.76-39.68-251.093c-3.2-5.013-9.813-6.4-14.72-3.2c-3.093,1.92-4.907,5.333-4.907,8.96V480H139.2
+			V245.333c0-5.867-4.8-10.667-10.667-10.667c-3.627,0-7.04,1.92-8.96,4.907c-3.413,5.333-79.573,127.36-39.68,251.093h-51.2
+			C22.187,448.107,0.107,259.2,100.48,158.933l83.307-20.587c1.493-0.32,2.773-1.067,3.947-1.92l7.36,6.293
+			c-0.747,0.747-1.28,1.6-1.707,2.56c-1.067,2.56-25.387,63.36,0,125.44c2.24,5.44,8.427,8.107,13.867,5.867
+			s8.107-8.427,5.867-13.867c-18.773-45.867-5.653-92.587-1.28-105.6l37.76,32.427c0.96,0.533,1.92,1.173,2.88,1.707
+			c1.28,0.533,2.667,0.853,4.053,0.853c1.386,0,2.773-0.32,4.053-0.853c0.96-0.533,1.92-1.173,2.88-1.707l37.867-32.427
+			c4.373,13.013,17.493,59.733-1.28,105.6c-2.24,5.44,0.427,11.733,5.867,13.867c5.44,2.24,11.733-0.427,13.867-5.867
+			c25.387-61.973,1.067-122.88,0-125.44c-0.427-0.96-1.067-1.813-1.707-2.56l7.36-6.293c1.173,0.96,2.56,1.6,3.947,2.027
+			l83.307,20.587C512.96,259.2,490.88,448.107,484.373,490.667z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M331.2,384H182.187c-5.333,0-10.133,3.84-10.88,9.067c-0.96,6.613,4.16,12.267,10.56,12.267H330.88
+			c5.333,0,10.133-3.84,10.88-9.067C342.72,389.653,337.6,384,331.2,384z"/>
+	</g>
+</svg>
+      </span>
+      <h4><a href="#">Hoodies</a></h4>
+      <p>Get your custom college hoodies!!</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="footer" style="height: 100vh;"></section>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
       integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <!-- <script type="text/javascript">
       window.addEventListener('scroll',function(){
           var nav=document.querySelector('.nav');
