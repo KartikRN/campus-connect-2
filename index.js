@@ -26,12 +26,7 @@ const navSlide = () => {
   
 };
 navSlide();
-//intro
-// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-// tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
-// tl.to(".slider", { y: "-100%", duration: 1.5 });
-// tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-// tl.fromTo('.hero',{opacity:0},{opacity:1,duration:1},'-=0.75')
+
 
 //intersection observers
 const header = document.querySelector("header");
@@ -43,21 +38,6 @@ const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px",
 };
 
-// const sectionOneObserver = new IntersectionObserver(function (
-//   entries,
-//   sectionOneObserver
-// ) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       header.classList.add("nav-scrolled");
-//     } else {
-//       header.classList.remove("nav-scrolled");
-//     }
-//   });
-// },
-// sectionOneOptions);
-
-// sectionOneObserver.observe(sectionOne);
 const appearOptions = {
   threshold: 0,
   rootMargin: "0px 0px -200px 0px",
