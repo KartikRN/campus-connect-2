@@ -672,7 +672,7 @@ ul.account-link {
 }
 
 .idea-us{
-  padding-top: 14rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
   background: #000;
   font-family: "Poppins", sans-serif;
@@ -985,4 +985,34 @@ width: 300px;
   transform: translateY(4px);
 } */
   
+.clubs__wrapper{
+      padding-top: 13rem;
+  padding-bottom: 6rem;
+  background: #000;
+  font-family: "Poppins", sans-serif;
+color: #f4f4f4;
+}
+@media screen and (min-width: 992px)
+{ .clubs__wrapper .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.clubs-idea{
+  max-width: 95vw;
+}
+.clubs__wrapper h2{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.clubs__wrapper p{
+  text-align: start;
+}
+.clubs__wrapper p a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bolder;
+}
+}
 
