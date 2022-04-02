@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Campus Connect</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png"  class="logo" alt=""></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2><span>Campus Connect</span><br>Integrating Campus to its people.</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/bg.png" alt="" class="campusconnect">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/discord.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/linkedin.png" alt=""></a></li>    
+            <li><a href="#"><img src="./img/user.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/cart.png" alt=""></a></li>                                
+        </ul>
+    </section>
+    <script>
+         function toggleMenu(){
+             var menuToggle=document.querySelector('.toggle');
+             var navigation=document.querySelector('.navigation');
+             navigation.classList.toggle('active');
+             menuToggle.classList.toggle('active');
+         }
+    </script>
+</body>
+</html>
