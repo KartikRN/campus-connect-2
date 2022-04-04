@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-section{
+.main{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -120,9 +120,74 @@ header ul li a{
     width: 100%;
     height: 100%;
     background:#000;
-    clip-path: circle(820px at right 700px);
+    clip-path: circle(805px at right 700px);
 
 }
+/* ----------------Idea us----------------- */
+.idea_us{
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 39%, rgba(175,169,169,0.2945553221288515) 62%, rgba(0,0,0,0.4458158263305322) 100%);
+position: relative;
+padding: 100px;
+}
+
+
+.idea_us a{
+    text-decoration: none;
+    color: #000;
+}
+.idea_center h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.idea_center p{
+    margin-bottom: 0px;
+    line-height: 2;
+    letter-spacing: 1px;
+    
+}
+/* -----------------goals---------------- */
+.goals{
+    position: relative;
+    padding: 100px;
+    width: 100%;
+}
+.goals .columns{
+    display: grid;
+    grid-template-areas: 'box box box';
+}
+.goals .columns .box{
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 10px 40px 10px;
+    box-shadow: rgb(68 88 144 / 10%) -1px 14px 14px 0px;
+    text-align: center;
+    
+}
+.goals .box img{
+    width: 56px;
+    object-fit: cover;
+    font-weight: 700;
+}
+.goals h2{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+/* --------------------merch-section--------------- */
+.merch-section{
+    position: relative;
+    padding: 100px;
+    width: 100%;
+}
+
+
+
+
+
+/* -----------------Media query------------ */
 @media (max-width:991px){
     header{
         padding: 20px;
@@ -206,4 +271,43 @@ header ul li a{
         border-top-left-radius:5px ;
         border-bottom-left-radius: 5px;
     }
+    .idea_us .idea_center img{
+        max-width: 305px;
+    }
+    .goals{
+        padding: 50px;
+    }
+    .goals .columns{
+        grid-template-areas: 'box';
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+
+  .idea_us .idea_center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.5rem;
+  }
+.idea_us .idea_center img {
+
+    max-width: 445px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.merchandise .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width:768px){
+    .idea_us{
+        padding: 20px;
+    }
+    .goals{
+        padding: 20px;
+    }
+
 }
