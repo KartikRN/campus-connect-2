@@ -293,6 +293,164 @@ header ul li a:hover{
   background: #e2e2e2;
   color: white;
 }
+.events_section span.button_explore{
+  display: flex;
+  justify-content: center;
+
+}
+.events_section span.button_explore a{
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #e2e2e2;
+}
+.events_section span.button_explore a:hover{
+  background:#1b1c1e
+}
+/* ------------------clubs-section--------- */
+.clubs_section{
+  padding: 100px;
+  width: 100%;
+  background: #141414;
+}
+.clubs_section .clubs_center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e2e2;
+}
+.clubs_section h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.clubs_section .clubs_center p{
+  line-height: 1.5;
+}
+.clubs_section .columns {
+  display: grid;
+  grid-template-areas: "box box box";
+}
+
+.clubs_section .columns .box {
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 10px 40px 10px;
+  text-align: center;
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.clubs_section .box img {
+  float: left;
+  width: 150px;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+.clubs_section h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.clubs_section .box span a {
+  text-decoration: none;
+  color: #1b1c1e;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.box span.button_more {
+  border-radius: 20px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #1b1c1e;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.box span.button_more:hover {
+  background: #e2e2e2;
+}
+.clubs_section span.button_explore{
+  display: flex;
+  justify-content: center;
+
+}
+.clubs_section span.button_explore a{
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #e2e2e2;
+}
+.clubs_section span.button_explore a:hover{
+  background:#1b1c1e
+}
+/* ------------------Alumni_section-------- */
+.alumni_section{
+  padding: 100px;
+  width: 100%;
+  background: #000;
+}
+.alumni_section .alumni_center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e2e2;
+}
+.alumni_section .alumni_center h2{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;  
+  text-align: start;
+}
+.alumni_section .alumni_center p{
+  line-height: 1.2;
+  font-size:1.5rem ;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.alumni_center span.alma_connect_btn a{
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #e2e2e2;  
+}
+.alumni_center span.alma_connect_btn a:hover{
+  background: #141414;
+}
+/* ----------------------project section----- */
+.project_section{
+  padding: 100px;
+  width: 100%;
+  background: #141414;
+}
+.project_section .project_center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e2e2e2;
+}
+.project_section .project_center h2{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;  
+  text-align: start;  
+}
+
 /* -----------------Media query------------ */
 @media (max-width: 991px) {
   header {
@@ -458,6 +616,6 @@ header ul li a:hover{
 #myBtn:hover {
   background: #7E91FF;
 }
-#mybtn img{
-    height: 10px;
+.main  img.scroll_img{
+    width: 30px;
 }
