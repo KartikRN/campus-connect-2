@@ -660,6 +660,11 @@ header ul li a:hover{
 .contact_us ul li img:hover{
   transform: scale(1.05);
 }
+.footer .copyright{
+  display: flex;
+  color: #e2e2e2;
+  padding: 2rem 2.5rem;
+}
 /* -----------------Media query------------ */
 @media (max-width: 991px) {
   header {
