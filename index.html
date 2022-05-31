@@ -1,213 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css" />
-<link rel="shortcut icon" href="img/1648292610.ico" type="image/x-icon">
-      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <title>CampusConnect</title>
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <h4>CampusConnect</h4>
-    </div>
-    <nav class="nav">
-
-      <ul id="primary-navigation" class="nav-links flex">
-        <li class="home_links"><a href="#" class="nav__link">Home</a></li>
-        <li class="home_links"><a href="#merchandise" class="nav__link">Merchandise</a></li>
-        <!-- <li class="home_links"><a href="#" class="nav__link">Tshirts</a></li> -->
-        <li class="home_links"><a href="#" class="nav__link">Blogs</a></li>
-        <li class="home_links"><a href="#idea-us" class="nav__link">About</a></li>
-        <li class="home_links user-btn"><a href="#" class="nav__link"><svg class="svg-icon" viewBox="0 0 20 20">
-              <path fill="none"
-                d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z">
-              </path>
-              <path fill="none"
-                d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z">
-              </path>
-            </svg></a></li>
-        <li class="home_links user-btn"><a href="#" class="nav__link"><svg class="svg-icon" viewBox="0 0 20 20">
-              <path fill="none"
-                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
-              </path>
-              <path fill="none"
-                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
-              </path>
-              <path fill="none"
-                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
-              </path>
-            </svg></a></li>
-      </ul>
-
-
-    </nav>
-    <nav class="account">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a class="nav__link nav__link--btn" href="#"><svg class="svg-icon" viewBox="0 0 20 20">
-              <path fill="none"
-                d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z">
-              </path>
-              <path fill="none"
-                d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z">
-              </path>
-            </svg></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Campus Connect</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="./img/logo.png" class="logo" alt="" /></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            <span>Campus Connect</span><br />Integrating Campus to its people.
+          </h2>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="imgBox">
+          <img src="./img/bg.png" alt="" class="campusconnect" />
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="./img/instagram.png" alt="" /></a>
         </li>
-        <li class="nav__list-item">
-          <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#"><svg class="svg-icon"
-              viewBox="0 0 20 20">
-              <path fill="none"
-                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
-              </path>
-              <path fill="none"
-                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
-              </path>
-              <path fill="none"
-                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
-              </path>
-            </svg></a>
+        <li>
+          <a href="#"><img src="./img/discord.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/linkedin.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/user.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/cart.png" alt="" /></a>
         </li>
       </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-  </header>
-
-  <section class="banner">
-    <div class="home">
-      <div class="hero">
-        <div class="remain">
-          <h1>Campus Connect</h1>
-            <p class="subtitle">Integrating campus to its people</p>
-            <p class="connect">Join our community....</p>
-                      <ul class="social">
-            <li class="social-links"><a href="#"><img class="social-image" src="./img/discord.png" alt=""></a></li>
-            <li class="social-links"><a href="#"><img class="social-image" src="./img/instagram.png" alt=""></a></li>
-            <li class="social-links"><a href="#"><img class="social-image" src="./img/linkedin (1).png" alt=""></a></li>
-
-          </ul>
-        </div>
-        <div class="banner-image">
-        <img class="bannerimage" src="./img/undraw_circuit_sdmr (3).svg" alt="CampusConnect">
-        </div>
-       
-      </div>
-    </div>
-  </section>
-
-    <!---------------------idea page--------------------------  -->
-    <section class="idea-us" id="idea-us">
-      
-       <div class="idea-center fade-in">
-         <h1 class="bold fade-in">The big question!!</h1>
-        <article class="header fade-in">
-          <h2 style="font-size: 1.8rem;">What is Campus Connect ?</h2>
-          <!-- <h2>What is Campus Connect?</h2> -->
-          <!-- <br>
-          <br> -->
-          <p style="color:black;">According to the founders <a href="#developers"><b>Aryan</b></a> and <a href="#developers"><b>Kartik</b></a> , Campus Connect is a centralised platform for all the information regarding a college. Initially built to sell the merchandise for their branch, Campus Connect evolved from just an idea to a full-blown project. During the first year of their college, they were uninformative about the environment of the college, clubs, events and other lots of stuff. So the idea of Campus Connect was generated to let people come at one place and gather all the information they require.   </p>
-        </article>
-        </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/rocket.png" class="scroll_img" alt=""></button>
     </section>
-    
-
-  <section class="goals">
-    <!-- <div class="custom-shape-divider-top-1644308636">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div> -->
-    <div class="home-about">
-      <h2>Our Goals</h2>
-      <div class="columns">
-        <div class="col fade-in box">
-          <h3>Enhancing campus life</h3>
+    <section class="idea_us">
+      <div class="idea_center fade-in">
+        <img src="./img/giffy.gif" alt="" class="fade-in intro-img" />
+        <article class="header fade-in">
+          <h2>What is Campus Connect ?</h2>
           <p>
-            To not let the online mode of education make you miss out the fun
-            of the college life.
+            According to the founders <a href="#developers"><b>Aryan</b></a> and
+            <a href="#developers"><b>Kartik</b></a> , Campus Connect is a centralised platform for all the information regarding a college. Initially built to sell the merchandise for their branch, Campus Connect evolved from just an idea to a full-blown project. The aim of CampusConnect is to let students have access to all the information about their college at one place. They aim to create a free, open and accessible space where anyone can contribute and grow. Let's build and grow in this space, together.
           </p>
+        </article>
+      </div>
+    </section>
+    <section class="goals">
+      <div class="home_about">
+        <div class="goals_center">
+          <img src="./img/goals.gif" alt="" class="intro-img">
+          <article class="goals_article">
+            <h2>What we aim to achieve ?</h2>
+          </article>
         </div>
-        <div class="col fade-in box">
-          <h3>Networking</h3>
-          <p>
-            Connect with different bright minds and help them learn and grow.
-            and you surely can contribute to our cause too :)
-          </p>
-        </div>
-        <div class="col fade-in box">
-          <h3>Start something new and amazing</h3>
-          <p>
-            Isn't it awesome to start something of your own? Just like we did.
-          </p>
+        <div class="columns">
+          <div class="col fade-in box">
+              <span class="icon"><img src="./img/campus.png" alt=""></span>
+            <h3>Enhancing campus space</h3>
+            <p>Build a space of passionate minds who want to be contribute and be part of the changes occuring around them.</p>
+          </div>
+          <div class="col fade-in box">
+              <span class="icon"><img src="./img/strength.png" alt=""></span>
+            <h3>Networking</h3>
+            <p>Connecting with different bright minds and help them learn and grow. And you surely can contribute to our cause too :)</p>
+          </div>
+          <div class="col fade-in box">
+              <span class="icon"><img src="./img/community.png" alt=""></span>
+            <h3>Strengthen the community</h3>
+            <p>Learning and teaching simultaneously and working towards strengthening the community.</p>
+          </div>
         </div>
       </div>
-      
-    </div>
-    <!-- <div class="custom-shape-divider-top-1644000556">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        class="shape-fill"></path>
-      </svg>
-    </div> -->
-  </section>
-  
-  <!--------------------------------merch section----------------------------  -->
-  <section class="merch-section merchandise" id="merchandise">
+    </section>
+     <!--------------------------------merch section----------------------------  -->
+   <section class="merch-section merchandise" id="merchandise">
     <div class="section-center fade-in">
-      <article class="header">
-        <h2>Customise your own merchandise</h2>
-        <p>Well who doesn't want to flaunt their branch hoodies and tshirts. Customise your branch hoodies and integrate
-          them on our platform.</p>
-      </article>
+      <div class="section_center_grid">
+        
+        <article class="header">
+          <h2>Get your branch's custom merchandise</h2>
+          <p>Well who doesn't want to flaunt their branch hoodies and tshirts.Customise and get your very own branch merchandise...</p>
+          </article>
+          <img src="./img/ecommerce.gif" alt="" class="intro-img">
+      </div>
       <div class="services-center fade-in">
         <div class="services">
           <span class="icon">
+            <a href="#">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" viewBox="0 0 450.78 450.78" style="enable-background:new 0 0 450.78 450.78;"
               xml:space="preserve">
-              <path d="M449.962,173.343L373.338,56.434c-0.521-0.796-1.26-1.427-2.128-1.817c0,0-108.317-49.534-113.373-47.804l-0.604,0.205
-	c-20.534,6.962-43.152,6.962-63.698-0.004l-0.593-0.201c-5.054-1.73-113.374,47.804-113.374,47.804
-	c-0.868,0.391-1.606,1.021-2.128,1.817L0.818,173.343c-1.286,1.962-1.035,4.553,0.602,6.231c1.3,1.334,32.496,32.807,89.373,45.624
-	c2.037,0.453,4.146-0.397,5.287-2.146l14.618-22.415l1.472,226.004c0.015,2.312,1.612,4.312,3.863,4.837
-	c35.771,8.355,72.564,12.533,109.357,12.533c36.793,0,73.586-4.178,109.357-12.533c2.25-0.525,3.848-2.525,3.863-4.837
-	l1.472-226.004l14.618,22.415c1.141,1.748,3.251,2.605,5.287,2.146c56.877-12.817,88.073-44.29,89.373-45.624
-	C450.997,177.896,451.247,175.305,449.962,173.343z M372.299,73.091l57.714,88.058c-14.914,10.884-41.974,28.08-77.646,40.02
-	l-11.193-17.162C358.297,156.778,368.417,99.246,372.299,73.091z M174.936,24.448c4.307,13.438,16.556,29.459,50.454,29.459
-	c33.897,0,46.147-16.021,50.454-29.459c0.174-0.542,0.307-1.09,0.414-1.639l5.578,2.513c-0.086,0.318-0.176,0.636-0.278,0.951
-	c-9.386,29.258-39.216,33.627-56.163,33.627c-16.951,0-46.788-4.368-56.174-33.63c-0.101-0.314-0.191-0.63-0.277-0.947l5.578-2.513
-	C174.629,23.357,174.762,23.905,174.936,24.448z M185.488,17.226c0.419-0.411,1.404-1.193,2.826-1.193
-	c0.426,0,0.891,0.07,1.392,0.241l0.63,0.215c22.605,7.663,47.503,7.663,70.098,0.004l0.642-0.219
-	c2.171-0.741,3.672,0.417,4.217,0.952c0.541,0.53,1.725,1.999,1.029,4.169c-4.787,14.938-18.559,22.512-40.931,22.512
-	c-22.373,0-36.145-7.574-40.932-22.512C183.763,19.225,184.947,17.756,185.488,17.226z M109.606,184.006l-11.193,17.162
-	c-35.672-11.94-62.732-29.136-77.646-40.02l57.714-88.058C82.363,99.246,92.483,156.778,109.606,184.006z M89.62,214.652
-	c-42.411-10.338-69.562-31.8-78.124-39.356l3.781-5.77c17.296,12.609,43.516,28.592,77.499,40.286L89.62,214.652z M328.636,422.619
-	c-67.635,15.191-138.855,15.191-206.492,0l-1.554-238.667c-0.002-0.315-0.086-0.698-0.201-1.08
-	c-0.285-0.938-0.748-1.804-1.299-2.616c-19.039-28.074-29.739-100.95-32.032-118.045l72.689-32.746
-	c4.906,15.168,19.949,40.434,65.649,40.434c45.692,0,60.733-25.268,65.638-40.434l72.689,32.746
-	c-2.294,17.095-12.994,89.971-32.032,118.045c-0.55,0.811-1.014,1.677-1.299,2.616c-0.116,0.382-0.199,0.765-0.201,1.08
-	L328.636,422.619z M361.16,214.652l-3.157-4.84c33.984-11.693,60.204-27.676,77.5-40.286l3.781,5.769
-	C430.717,182.855,403.568,204.315,361.16,214.652z" />
+                  <path d="M449.962,173.343L373.338,56.434c-0.521-0.796-1.26-1.427-2.128-1.817c0,0-108.317-49.534-113.373-47.804l-0.604,0.205
+    	c-20.534,6.962-43.152,6.962-63.698-0.004l-0.593-0.201c-5.054-1.73-113.374,47.804-113.374,47.804
+    	c-0.868,0.391-1.606,1.021-2.128,1.817L0.818,173.343c-1.286,1.962-1.035,4.553,0.602,6.231c1.3,1.334,32.496,32.807,89.373,45.624
+    	c2.037,0.453,4.146-0.397,5.287-2.146l14.618-22.415l1.472,226.004c0.015,2.312,1.612,4.312,3.863,4.837
+    	c35.771,8.355,72.564,12.533,109.357,12.533c36.793,0,73.586-4.178,109.357-12.533c2.25-0.525,3.848-2.525,3.863-4.837
+    	l1.472-226.004l14.618,22.415c1.141,1.748,3.251,2.605,5.287,2.146c56.877-12.817,88.073-44.29,89.373-45.624
+    	C450.997,177.896,451.247,175.305,449.962,173.343z M372.299,73.091l57.714,88.058c-14.914,10.884-41.974,28.08-77.646,40.02
+    	l-11.193-17.162C358.297,156.778,368.417,99.246,372.299,73.091z M174.936,24.448c4.307,13.438,16.556,29.459,50.454,29.459
+    	c33.897,0,46.147-16.021,50.454-29.459c0.174-0.542,0.307-1.09,0.414-1.639l5.578,2.513c-0.086,0.318-0.176,0.636-0.278,0.951
+    	c-9.386,29.258-39.216,33.627-56.163,33.627c-16.951,0-46.788-4.368-56.174-33.63c-0.101-0.314-0.191-0.63-0.277-0.947l5.578-2.513
+    	C174.629,23.357,174.762,23.905,174.936,24.448z M185.488,17.226c0.419-0.411,1.404-1.193,2.826-1.193
+    	c0.426,0,0.891,0.07,1.392,0.241l0.63,0.215c22.605,7.663,47.503,7.663,70.098,0.004l0.642-0.219
+    	c2.171-0.741,3.672,0.417,4.217,0.952c0.541,0.53,1.725,1.999,1.029,4.169c-4.787,14.938-18.559,22.512-40.931,22.512
+    	c-22.373,0-36.145-7.574-40.932-22.512C183.763,19.225,184.947,17.756,185.488,17.226z M109.606,184.006l-11.193,17.162
+    	c-35.672-11.94-62.732-29.136-77.646-40.02l57.714-88.058C82.363,99.246,92.483,156.778,109.606,184.006z M89.62,214.652
+    	c-42.411-10.338-69.562-31.8-78.124-39.356l3.781-5.77c17.296,12.609,43.516,28.592,77.499,40.286L89.62,214.652z M328.636,422.619
+    	c-67.635,15.191-138.855,15.191-206.492,0l-1.554-238.667c-0.002-0.315-0.086-0.698-0.201-1.08
+    	c-0.285-0.938-0.748-1.804-1.299-2.616c-19.039-28.074-29.739-100.95-32.032-118.045l72.689-32.746
+    	c4.906,15.168,19.949,40.434,65.649,40.434c45.692,0,60.733-25.268,65.638-40.434l72.689,32.746
+    	c-2.294,17.095-12.994,89.971-32.032,118.045c-0.55,0.811-1.014,1.677-1.299,2.616c-0.116,0.382-0.199,0.765-0.201,1.08
+    	L328.636,422.619z M361.16,214.652l-3.157-4.84c33.984-11.693,60.204-27.676,77.5-40.286l3.781,5.769
+    	C430.717,182.855,403.568,204.315,361.16,214.652z" />
             </svg>
+            </a>
           </span>
           <h4><a href="#">Tshirts</a></h4>
           <p>Get your custom college tshirts!!</p>
         </div>
         <div class="services">
           <span class="icon">
+            <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 513.067 513.067"
               style="enable-background:new 0 0 513.067 513.067;" xml:space="preserve">
@@ -240,6 +170,7 @@
 			c5.333,0,10.133-3.84,10.88-9.067C342.72,389.653,337.6,384,331.2,384z" />
                 </g>
             </svg>
+            </a>
           </span>
           <h4><a href="#">Hoodies</a></h4>
           <p>Get your custom college hoodies!!</p>
@@ -247,159 +178,223 @@
       </div>
     </div>
 
+  </section> 
+  <section class="events_section">
+    <div class="events_center fade-in">
+      <img src="./img/Events.gif" alt="" class="intro-img">
+      <article class="events_article">
+        <h2>Don't miss out any of the events in the college.</h2>
+      </article>
+    </div>
+        <div class="columns">
+          <div class="col fade-in box">
+            <img src="./img/orientation.jpg" alt="" class="events_banner">
+            <div class="events_info">
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eius?z</p>
+            </div>
+            <span class="button"><a href="">Register ></a></span>
+          </div>
+          <div class="col fade-in box">
+             <img src="./img/orientation.jpg" alt="" class="events_banner">
+             <div class="events_info">
+               <h3>Lorem ipsum dolor sit amet.</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, inventore?</p>
+             </div>
+            <span class="button"><a href="">Register ></a></span>
+          </div> 
+          <div class="col fade-in box">
+             <img src="./img/orientation.jpg" alt="" class="events_banner">
+             <div class="events_info">
+               <h3>Lorem ipsum dolor sit amet.</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quasi.</p>
+             </div>
+            <span class="button"><a href="">Register ></a></span>
+          </div> 
+        </div> 
+        <span class="button_explore"><a href="">Explore more events ></a></span>  
   </section>
-  <!---------------------clubs section----------------------  -->
-  <section class='clubs__wrapper' id='clubs__wrapper' style="background-color: black;">
-    <div class="clubs-idea fade-in">
-      <div class="bold fade-in">
-        <article class="header fade-in">
-          <h2>Campus and its buzzing life....</h2>
-          <p style="font-size: 1rem; color: aliceblue;">In addition to education one of the major benefits of being a college student is the friendships and bonds you establish here. But the hectic academic life leaves no time for the students to socialise. So the alternative way through which students can meet new people and expand their network without infringing upon their studies is through joining the campus <a href="">Clubs</a> and building new <a href="">Projects</a></p>
-        </article>
+  <section class="clubs_section">
+    <div class="clubs_center fade-in">
+      <article class="clubs_article">
+        <h2>Interested in college clubs and their events ?</h2>
+        <p>In addition to education one of the major benefits of being a college student is the friendships and bonds you establish here. But the hectic academic life leaves no time for the students to socialise. So the alternative way through which students can meet new people and expand their network without infringing upon their studies is through joining the college clubs and participating in various events.</p>
+      </article>
+      <img src="./img/Audiobook.gif" alt="" class="intro-img">
+    </div>
+    <div class="columns">
+      <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="" class="club_banner">
+        <div class="club_info">
+          <h3>Club Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla!</p>
+        </div>
+        <span class="button_more"><a href="">Know more ></a></span>
       </div>
+        <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="" class="club_banner">
+        <div class="club_info">
+          <h3>Club Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla!</p>
+        </div>
+        <span class="button_more"><a href="">Know more ></a></span>
+      </div>
+      <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="" class="club_banner">
+        <div class="club_info">
+          <h3>Club Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla!</p>
+        </div>
+        <span class="button_more"><a href="">Know more ></a></span>
+      </div>     
     </div>
-    <div class="list__wrapper">
-      <ul class="lists fade-in">
-        <li><a href="" class="other__list">Know your club</a></li>
-        <li><a href="" class="other__list">Make connections</a></li>
-        <li><a href="almaconnect.html" class="other__list">Alumni Connect</a></li>        
-      </ul>
-    </div>
-  </div>
-  <!-- <div class="custom-shape-divider-top-1646056211">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div> -->
+    <span class="button_explore"><a href="">Explore more events ></a></span> 
   </section>
-  <section class="tour-section fade-in">
-    <div class="tour-wrapper fade-in">
-      <h1 class="bold fade-in">Take a virtual tour...</h1>
-      <div class="video-player">
-              <video controls>
-        <source src="./img/Man Texting On The Street.mp4" type="video/mp4">
-      </video>
-
-      </div>
-
-      <div class="carousel owl-carousel">
-        <div class="tour-card card-1"><img src="img/img1.jpg" alt="" class="campus-image"></div>
-        <div class="tour-card card-1"><img src="img/img2.png" alt="" class="campus-image"></div>
-        <div class="tour-card card-1"><img src="img/img2.png" alt="" class="campus-image"></div>
-        <div class="tour-card card-1"><img src="img/img2.png" alt="" class="campus-image"></div>
-        <div class="tour-card card-1"><img src="img/img2.png" alt="" class="campus-image"></div>
-      </div>
-    </div>
-  </section>
-  <!-- -----------------developers page----------------------- -->
-  <section class="dev-section" id="developers">
-    <!-- <div class="custom-shape-divider-top-1644488375">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div> -->
-    <div class="dev-center fade-in">
-      <h1 class="bold fade-in">Our Founders</h1>
-      <div class="card-section">
-     <div class="card">
-        <div class="profile-sidebar">
-            <img class="profile-img" src="./img/aryan.png" alt="">
-            <ul class="social-list">
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-        </div>
-        <div class="profile-main">
-            <h2 class="profile-name">Aryan Singh</h2>
-            <p class="profile-position">Co-founder</p>
-            <p class="profile-body">Aryan is a sophomore at Sir M. Visvesvaraya Institute of Technology pursuing his Bachelors in Electronics and Communication Engineering. He is passionate about open source software world and strengthening the community. He is a full stack developer with interests in cloud, devops.</p>
-        </div>
-    </div>
-     <div class="card">
-        <div class="profile-sidebar">
-            <img class="profile-img" src="./img/kartik.png" alt="">
-            <ul class="social-list">
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="social-item"><a aria-label="linkedin" class="social-link" href="#"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-        </div>
-        <div class="profile-main">
-            <h2 class="profile-name">Kartik Nandagaon</h2>
-            <p class="profile-position">Co-founder</p>
-            <p class="profile-body">Kartik is a sophomore at Sir M. Visvesvaraya Institute of Technology pursuing his Bachelors in Electronics and Communication Engineering. He is a backend developer with interests in cloud, cybersecurity and roasting his friends every chance he gets.</p>
-        </div>
-    </div>
-      </div>
- 
+  <section class="alumni_section">
+    <div class="alumni_center">
+      <img src="./img/Graduation.gif" alt="" class="intro-img">
+      <article class="alumni_article">
+        <h2>AlmaConnect</h2>
+        <p>Our initiative to connect you back to your Alma Mater.</p>
+        <span class="alma_connect_btn"><a href="">Explore more about AlmaConnect ></a></span>
+      </article>
     </div>
   </section>
-  <!---------------------------- contact us page------------------------- -->
-  <!-- <section class="contact-us">
-<div class="custom-shape-divider-top-1644488115">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
-<h1 class="bold fade-in">Want to work with us ?</h1>
-      <div class="contact-center fade-in">
-       <div class="contact-image">
-         <img src="./img//undraw_contract_re_ves9.svg" alt="" class="contact-img">
-       </div>
-       <div class="contact-form">
-         <form  id="contact-form" action="">
-                      <div class="mb-3">
-                        <label for="clientname" class="form-label">Full name:</label>
-                        <input type="text" class="form-control" name="clientname" aria-describedby="emailHelp"/>
-                        <div class="mb-3">
-                            <label for="clientemail" class="form-label">Email address:</label>
-                            <input type="email" class="form-control" name="clientemail" aria-describedby="emailHelp"/>
-                            <div id="emailHelp" class="form-text">
-                                We'll never share your email with anyone else.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="clientphone" class="form-label">Phone</label>
-                            <input type="text" class="form-control" name="clientphone" />
-                        </div>
-                        <div class="form-group">
-                            <label for="clientquery">Details</label>
-                            <textarea class="form-control" name="clientquery" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn submit-btn">Submit</button>
-                      </div>
-         </form>
-       </div>
-     
+  <section class="project_section">
+    <div class="project_center">
+      <article class="project_article">
+        <h2>Featured projects</h2>
+        <p>Building projects is the foremost way of learning any new technology or tech stack. Submit your proposal to us and we will present it to the world. </p>
+      </article>
+      <img src="./img/Process.gif" alt="" class="intro-img">
+    </div>
+    <h3 class="heading">Top three mind boggling projects...</h3>
+    <div class="columns fade-in">
+      <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="">
+        <div class="project_info">
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, dolor?</p>
+        </div>
+        <span class="button_projects"><a href="">Read more ></a></span>
       </div>
-  </section> -->
+      <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="">
+        <div class="project_info">
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facere.</p>
+        </div>
+        <span class="button_projects"><a href="">Read more ></a></span>
+      </div>
+      <div class="col fade-in box">
+        <img src="./img/orientation.jpg" alt="">
+        <div class="project_info">
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, porro.</p>
+        </div>
+        <span class="button_projects"><a href="">Read More ></a></span>
+      </div>
+    </div>
+    <span class="button_explore"><a href="">Explore all the projects ></a></span>
+  </section>
+  <section class="community_section">
+    <div class="community_center">
+      <img src="./img/space.gif" alt="" class="intro-img">
+      <article class="community_article">
+        <h2>Join our supportive community which is always evolving. </h2>
+        <p>Contribute to our cause of building an ever evolving and rapidly growing space by joining our supportive communities.</p>
+        <div class="icons">
+          <a href="" class="whatsapp">
+            <button class="whatsapp_btn btn">
+              <span class="icon_btn">
+                <img src="./img/whatsappsvg.svg" alt="" class="whatsapp_icon">
+              </span>
+              Join Whatsapp
+            </button>
+          </a>
+          <a href="" class="discord">
+            <button class="discord_btn btn">
+              <span class="icon_btn">
+                <img src="./img/discordsvg.svg" alt="" class="discord_icon">
+              </span>
+              Join Discord
+            </button>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer_center">
+      <div class="logo">
+        <img src="./img/logo-black.png" alt="">
+        <p> Campus Connect is a centralised platform for all the information regarding a college.</p>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="">Team</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h3>Useful links</h3>
+        <ul>
+          <li><a href="">Tshirts</a></li>
+          <li><a href="">Hoodies</a></li>
+          <li><a href="">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="contact_us">
+        <h3>Contact Us</h3>
+        <a href="mailto: campus.connect.contact@gmail.com">campus.connect.contact@gmail.com</a>
+        <ul>
+        <li>
+          <a href="#"><img src="./img/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/discord.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/linkedin.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/whatsapp.png" alt="" /></a>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>| © 2021 campusconnect.one | All Rights Reserved |</p>
+    </div>
+  </section>
+    <script>
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        navigation.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      }
+      //Get the button
+var mybutton = document.getElementById("myBtn");
 
-  <script src="index.js" defer></script>
-  <script>
-         $(".carousel").owlCarousel({
-           margin: 20,
-           loop: true,
-           autoplay: true,
-           autoplayTimeout: 2000,
-           autoplayHoverPause: true,
-           responsive: {
-             0:{
-               items:1,
-               nav: false
-             },
-             600:{
-               items:2,
-               nav: false
-             },
-             1000:{
-               items:3,
-               nav: false
-             }
-           }
-         });
-  </script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-</body>
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+  </body>
 </html>
