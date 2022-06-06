@@ -898,3 +898,44 @@ header ul li a:hover{
 .main  img.scroll_img{
     width: 30px;
 }
+
+/* -----------top notification bar----------- */
+
+.notification-top-bar {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #1ABC9C;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.notification-top-bar p {
+  padding-left: 40px;
+  margin: 0;
+}
+.notification-top-bar p a {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #FFF;
+  color: #1ABC9C;
+  font-weight: bold;
+  text-decoration: none;
+}
+.notification-top-bar .notification_content{
+  display: flex;
+  justify-content: center;
+}
+.notification-top-bar .atomicons-close{
+  cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 22px;
+    top: 1px;
+}
+
