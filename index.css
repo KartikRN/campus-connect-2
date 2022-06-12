@@ -908,7 +908,7 @@ header ul li a:hover{
   height: 40px;
   line-height: 40px;
   width: 100%;
-  background: #1ABC9C;
+  background: #7289DA;
   text-align: center;
   color: #FFFFFF;
   font-family: sans-serif;
@@ -923,7 +923,7 @@ header ul li a:hover{
   padding: 5px 10px;
   border-radius: 3px;
   background: #FFF;
-  color: #1ABC9C;
+  color: #7289DA;
   font-weight: bold;
   text-decoration: none;
 }

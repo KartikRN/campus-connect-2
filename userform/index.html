@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- multistep form -->
+<div id="svg_wrap"></div>
+
+ <h1>User profile</h1>
+<section>
+  <p>Fill out your details</p>
+  <div class="row">
+   <div class="small-12 medium-2 large-2 columns">
+     <div class="circle">
+       <img class="profile-pic" src="../img/profile-image.jpg">
+
+     </div>
+     <div class="p-image">
+       <i class="fa fa-camera upload-button"></i>
+        <input class="file-upload" type="file" accept="image/*"/>
+     </div>
+  </div>
+</div>
+<p>
+  <input type="text" placeholder="Firstname" />
+</p>
+<p>
+
+  <input type="text" placeholder="Surname" />
+</p>
+  <p>
+     <label for="birthday">Birthdate:</label>
+    <input type="date" placeholder="Birthdate" id="birthday" />
+  </p>
+  <p>
+<label for="github">Github:</label>
+    <input type="email" placeholder="Github link" id="github"/>
+  </p>
+  <p>
+    <label for="linkedin">LinkedIn:</label>
+    <input type="email" id="linkedin" placeholder="LinkedIn link">
+  </p>
+</section>
+
+<section>
+  <p>We would like to know the projects you did or are currently working on and if if we find them out of the box we would make sure to display it to the world.</p>
+  <p>Submit any of your three best projects</p>
+  <div class="project">
+    <label for="p-1"><h1>Project-1</h1></label>
+    <textarea name="p-1" id="p-1" cols="5" rows="5" placeholder="Write a brief discription about your project"></textarea>
+    <label for="project-image"><p>Project image:</p></label>
+    <input type="file" name="project-image" id="project-image" accept="image/*">
+    <input type="email" placeholder="Github link of project">
+    <input type="email" placeholder="Webpage link of the project">
+  </div>
+    <div class="project">
+    <label for="p-1"><h1>Project-2</h1></label>
+    <textarea name="p-1" id="p-1" cols="5" rows="5" placeholder="Write a brief discription about your project"></textarea>
+    <label for="project-image"><p>Project image:</p></label>
+    <input type="file" name="project-image" id="project-image" accept="image/*">
+    <input type="email" placeholder="Github link of project">
+    <input type="email" placeholder="Webpage link of the project">
+  </div>
+    <div class="project">
+    <label for="p-1"><h1>Project-3</h1></label>
+    <textarea name="p-1" id="p-1" cols="5" rows="5" placeholder="Write a brief discription about your project"></textarea>
+    <label for="project-image"><p>Project image:</p></label>
+    <input type="file" name="project-image" id="project-image" accept="image/*">
+    <input type="email" placeholder="Github link of project">
+    <input type="email" placeholder="Webpage link of the project">
+  </div>
+</section>
+<section>
+  <p>
+    <label for="description"><p>Describe yourself in three words...</p></label>
+    <textarea name="description" id="description" cols="3" rows="2"></textarea>
+  </p>
+  <p>
+    <label for="w3review"><p>Tell us a few words about yourself...</p></label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+    </textarea>
+  </p>
+</section>
+
+<section>
+  <p>Field of interest</p>
+<div class="interest-group">
+  <div class="fields-group">
+    <div class="field">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+        <div class="field">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+        <div class="field">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+        <div class="field" id="field_data">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+        <div class="field" id="field_data">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+        <div class="field" id="field_data">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+        <div class="remove_field" onclick="removeField()">
+          <i class='bx bx-x'></i>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="interest-fields-group">
+    <p>Select any seven of them...</p>
+    <div class="field">
+      <span class="field_details">
+        <span class="field_name">coding</span>
+      </span>
+    </div>
+  </div>
+</div>
+</section>
+
+  <div class="button" id="prev">&larr; Previous</div>
+<div class="button" id="next">Next &rarr;</div>
+<div class="button" id="submit">Submit profile</div>
+    <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your changes has been saved</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
